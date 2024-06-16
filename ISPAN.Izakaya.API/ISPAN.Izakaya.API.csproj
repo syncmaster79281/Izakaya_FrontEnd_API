@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="credentials\**" />
+    <Compile Remove="Dtos\**" />
+    <Compile Remove="image\**" />
+    <Compile Remove="StaticFiles\**" />
+    <Content Remove="credentials\**" />
+    <Content Remove="Dtos\**" />
+    <Content Remove="image\**" />
+    <Content Remove="StaticFiles\**" />
+    <EmbeddedResource Remove="credentials\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <EmbeddedResource Remove="image\**" />
+    <EmbeddedResource Remove="StaticFiles\**" />
+    <None Remove="credentials\**" />
+    <None Remove="Dtos\**" />
+    <None Remove="image\**" />
+    <None Remove="StaticFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.2" />
+    <None Include="client_secrets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.67.0.3287" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Hangfire" Version="1.8.11" />
+    <PackageReference Include="Hangfire.AspNet" Version="0.2.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.11" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.11" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.8.11" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Google.Apis" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.67.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.67.0.3309" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+    <PackageReference Include="MimeKit" Version="4.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\ISPAN.Izakaya.BLL(Service)\ISPAN.Izakaya.BLL(Service).csproj" />
+    <ProjectReference Include="..\ISPAN.Izakaya.EFModels\ISPAN.Izakaya.EFModels.csproj" />
+    <ProjectReference Include="..\ISPAN.Izakaya.IBLL(IService)\ISPAN.Izakaya.IBLL(IService).csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Utilities">
+      <HintPath>..\Utilities\bin\Debug\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
