@@ -31,6 +31,10 @@
 
 ## 資料庫設計
 ![image](https://github.com/syncmaster79281/Izakaya_BackEnd/assets/19486441/8919808d-3f4b-45a3-8a71-55d1ff231493)
+![image](https://github.com/syncmaster79281/Izakaya_FontEnd_API/assets/19486441/717448bb-3d5d-4028-9309-bd44d7a1527f)
+![image](https://github.com/syncmaster79281/Izakaya_FontEnd_API/assets/19486441/e12753f2-e59d-4bfe-a3bc-f88a5866cdc8)
+
+
 
 
 ## 金流參照
